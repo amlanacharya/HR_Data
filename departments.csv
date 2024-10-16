@@ -1,0 +1,6 @@
+department_id,name,manager_id
+D001,HR,E047
+D002,Finance,E001
+D003,Marketing,E001
+D004,Sales,E036
+D005,IT,E014

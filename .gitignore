@@ -1,0 +1,9 @@
+*.pyc
+*.db
+*.db3
+*.log
+*.env
+venv
+data.py
+data2.py
+py_neo4j.py
