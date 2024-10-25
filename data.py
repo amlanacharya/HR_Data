@@ -13,7 +13,7 @@ def generate_employee_data(num_employees):
             'name': fake.name(),
             'hire_date': fake.date_between(start_date='-10y', end_date='today'),
             'salary': random.randint(30000, 200000),
-            'email': fake.unique.email(),
+            'email': fake.first_name().lower()+fake.last_name().lower()+"@company.com",
             'location_id': fake.unique.bothify(text='L###'),
             'department_id': fake.unique.bothify(text='D###'),
             'role_id': fake.unique.bothify(text='R###'),

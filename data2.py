@@ -79,7 +79,7 @@ def generate_data():
             trainings = random.sample(training_ids, random.randint(1, 2))
             writer.writerow([
                 employee_id, fake.name(), fake.date_between(start_date='-10y', end_date='today'),
-                random.randint(30000, 200000), fake.unique.email(), location_id, department_id, role_id,
+                random.randint(30000, 200000), fake.first_name().lower()+fake.last_name().lower()+"@company.com", location_id, department_id, role_id,
                 manager_id, ','.join(projects), ','.join(skills), ','.join(trainings)
             ])
 
